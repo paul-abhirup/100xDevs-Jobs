@@ -1,10 +1,10 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import Link from "next/link";
+import { Button } from "@/app/components/ui/button";
+import { Input } from "@/app/components/ui/input";
+import { Card, CardContent } from "@/app/components/ui/card";
+import { Badge } from "@/app/components/ui/badge";
 
-export default function Hero(){
+export default function Hero() {
   return (
     <div className="flex flex-col min-h-screen">
       <section className="bg-primary py-12 md:py-20 px-6 md:px-8">
@@ -196,9 +196,8 @@ function ApertureIcon(props) {
       <path d="M14.31 16H2.83" />
       <path d="m16.62 12-5.74 9.94" />
     </svg>
-  )
+  );
 }
-
 
 function BriefcaseIcon(props) {
   return (
@@ -217,9 +216,8 @@ function BriefcaseIcon(props) {
       <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
       <rect width="20" height="14" x="2" y="6" rx="2" />
     </svg>
-  )
+  );
 }
-
 
 function ClipboardIcon(props) {
   return (
@@ -238,9 +236,8 @@ function ClipboardIcon(props) {
       <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
       <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
     </svg>
-  )
+  );
 }
-
 
 function CodeIcon(props) {
   return (
@@ -259,7 +256,7 @@ function CodeIcon(props) {
       <polyline points="16 18 22 12 16 6" />
       <polyline points="8 6 2 12 8 18" />
     </svg>
-  )
+  );
 }
 
 function DollarSignIcon(props) {
@@ -279,9 +276,8 @@ function DollarSignIcon(props) {
       <line x1="12" x2="12" y1="2" y2="22" />
       <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
     </svg>
-  )
+  );
 }
-
 
 function MapPinIcon(props) {
   return (
@@ -300,9 +296,8 @@ function MapPinIcon(props) {
       <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
       <circle cx="12" cy="10" r="3" />
     </svg>
-  )
+  );
 }
-
 
 function MenuIcon(props) {
   return (
@@ -322,9 +317,8 @@ function MenuIcon(props) {
       <line x1="4" x2="20" y1="6" y2="6" />
       <line x1="4" x2="20" y1="18" y2="18" />
     </svg>
-  )
+  );
 }
-
 
 function UsersIcon(props) {
   return (
@@ -345,9 +339,8 @@ function UsersIcon(props) {
       <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
       <path d="M16 3.13a4 4 0 0 1 0 7.75" />
     </svg>
-  )
+  );
 }
-
 
 function XIcon(props) {
   return (
@@ -366,6 +359,5 @@ function XIcon(props) {
       <path d="M18 6 6 18" />
       <path d="m6 6 12 12" />
     </svg>
-  )
+  );
 }
-

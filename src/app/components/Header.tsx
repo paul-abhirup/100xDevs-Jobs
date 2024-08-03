@@ -1,20 +1,20 @@
 import { getSignInUrl, getUser, signOut } from "@workos-inc/authkit-nextjs";
 import Link from "next/link";
-import { Button } from "@/components/ui/button"
+import { Button } from "@/app/components/ui/button";
 
 export default async function Header() {
   const { user } = await getUser();
   const signInUrl = await getSignInUrl();
   return (
     <header className="bg-primary text-primary-foreground py-4 px-6 md:px-8 flex items-center justify-between">
-      <Link href="#" className="text-xl font-bold" prefetch={false}>
-        100xDevs Job Portal
+      <Link href="/" className="text-xl font-bold" prefetch={false}>
+        100xDevs Jobs
       </Link>
       <nav className="hidden md:flex items-center gap-6">
         <Link href="#" className="hover:underline" prefetch={false}>
           Bug Bounty
         </Link>
-        <Link href="#" className="hover:underline" prefetch={false}>
+        <Link href={"/job-listing"} className="hover:underline" prefetch={false}>
           Find Jobs
         </Link>
         <Link href="#" className="hover:underline" prefetch={false}>
