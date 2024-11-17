@@ -12,6 +12,14 @@ export default async function Home() {
     await JobModel.find({},{},{limit:5,sort:'-createdAt'}),
     user,
   );
+  
+  if (!user) {
+    return (
+      <div className="container">
+        <div>You need to be logged in to post a job</div>
+      </div>
+    );
+  }
   return (
     <>
       <Theme>
